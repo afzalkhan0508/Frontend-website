@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afzal Khan | Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f8fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #00264d, #121c27);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: #005fbf;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #e0f0ff;
+      color: #00264d;
+    }
+    .slider {
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #005fbf;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .project {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+    form, iframe {
+      margin: 30px auto;
+      display: block;
+      max-width: 600px;
+      width: 100%;
+    }
+    footer {
+      background-color: #00264d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Afzal Khan</h1>
+    <p>I'm a Software Developer & Python Developer</p>
+    <p>Contact me to work together — let's build something amazing!</p>
+  </header>
+
+  <nav>
+    <a href="#slider">Showcase</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#form">Enquiry</a>
+  </nav>
+
+  <section id="slider">
+    <h2>Project Showcase</h2>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="https://via.placeholder.com/1000x400?text=Responsive+Website" alt="Responsive Website" /></div>
+        <div class="slide"><img src="https://i.ytimg.com/vi/Ff9zSoV5Xgo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAleJvn8caKhOBXoT6y_Q8ilZQvKA" alt="Tic Tac Toe" style="width: 200px;;px;" height="150px;" /></div>
+        <div class="slide"><img src="https://cdn.sanity.io/images/v6v65cpt/production/ccc7ba0939811ac41df8985447ed154b003e5bae-1200x627.jpg" alt="Stopwatch Timer" style="width: 200px;;" height="150px" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Python & Web Projects</h2>
+    <div class="projects">
+      <div class="project"><h3>Tic Tac Toe Game</h3><p>Classic grid-based game built in Python with simple GUI logic.</p></div>
+      <div class="project"><h3>Stopwatch Timer</h3><p>Clean Python app that lets you track time with start, stop and reset buttons.</p></div>
+      <div class="project"><h3>Responsive Websites</h3><p>Developed smooth, mobile-friendly sites running seamlessly on Android & iOS.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      📧 Email: <a href="mailto:afzalkhan.onelife0508@gmail.com">afzalkhan.onelife0508@gmail.com</a><br />
+      📱 Phone: <a href="tel:+919045061400">+91 9045061400</a>
+    </div>
+  </section>
+
+  <section id="form">
+    <!-- Replace with your actual Google Form URL -->
+    <section id="enquiry-form">
+<button onclick="toggleForm()" style="margin: 20px auto; display: block; padding: 12px 24px; font-size: 16px; background: #005fbf; color: white; border: none; border-radius: 6px; cursor: pointer;">
+  📩 Enquiry Form
+</button>
+
+<!-- Hidden Enquiry Form -->
+<div id="enquiryForm" style="display: none; max-width: 600px; margin: auto; background: #fff; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px;">
+  <h2 style="text-align:center; color:#005fbf;">Enquiry Form</h2>
+  <form action="#" method="post">
+    <input type="text" name="fullname" placeholder="Full Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <input type="email" name="email" placeholder="Email Address" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <input type="tel" name="contact" placeholder="Contact Number" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <input type="text" name="country" placeholder="Country" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <input type="text" name="state" placeholder="State" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <input type="text" name="city" placeholder="City" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+    <textarea name="message" rows="5" placeholder="Your Message or Inquiry" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+    <button type="submit" style="padding: 10px 20px; background: #005fbf; color: white; border: none; border-radius: 5px;">Submit</button>
+  </form>
+</div>
+
+<!-- JavaScript to toggle form visibility -->
+<script>
+  function toggleForm() {
+    const form = document.getElementById("enquiryForm");
+    form.style.display = form.style.display === "none" ? "block" : "none";
+  }
+</script>
+</button>
+</div>
+
+<!-- JavaScript to toggle form visibility -->
+<script>
+  function toggleForm() {
+    const form = document.getElementById("enquiryForm");
+    form.style.display = form.style.display === "none" ? "block" : "none";
+  }
+</script>
+  </button>
+</section>
+  </section>
+
+  <footer>
+    <p>© 2025 all rights reserved | Developed by Afzal khan</p>
+  </footer>
+</body>
+</html>
